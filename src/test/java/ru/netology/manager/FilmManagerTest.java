@@ -27,6 +27,7 @@ class FilmManagerTest {
 
         assertArrayEquals(expected, actual);
     }
+
     @Test
     void addFilmTest() {
 
@@ -82,6 +83,7 @@ class FilmManagerTest {
 
         assertArrayEquals(expected, actual);
     }
+
     @Test
     void getAllLessLimit() {
         afisha.addFilm(first);
@@ -107,23 +109,5 @@ class FilmManagerTest {
 
         assertArrayEquals(expected, actual);
     }
-//    @Test
-//    void getAllMoreConstrTest() {
-//
-//        limitFilms.setLimit(limitFilms.getLimit());
-//
-//        //добавляем элементы в массив
-//        limitFilms.addFilm(first);
-//        limitFilms.addFilm(second);
-//        limitFilms.addFilm(third);
-//        limitFilms.addFilm(fourth);
-//        limitFilms.addFilm(fifth);
-//        limitFilms.addFilm(sixth);
-//
-//        FilmItem[] actual = limitFilms.getAll();
-//        FilmItem[] expected = new FilmItem[]{seventh, sixth, fifth, fourth, third};
-//
-//        //проверка ожидаемого и фактического результата
-//        assertArrayEquals(expected, actual);
-//    }
+
 }
